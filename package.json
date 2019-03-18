@@ -1,17 +1,17 @@
 {
   "name": "nasa-collection",
-  "homepage": "https://buffalolazyvn.github.com/nasa-collection",
+  "homepage": "https://buffalolazyvn.github.com/nasa-collection/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "cross-env PORT=8000 react-scripts start",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "serve": "cross-env NODE_ENV=development ./node_modules/.bin/nodemon ./server/index.js",
-    "production": "cross-env NODE_ENV=production node -r ./server/index.js"
+    "production": "cross-env NODE_ENV=production node -r ./server/index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "connected-react-router": "^4.3.0",
